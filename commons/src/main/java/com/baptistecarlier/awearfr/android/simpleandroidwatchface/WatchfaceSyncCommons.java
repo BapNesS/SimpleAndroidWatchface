@@ -1,4 +1,4 @@
-package com.catinean.simpleandroidwatchface;
+package com.baptistecarlier.awearfr.android.simpleandroidwatchface;
 
 public final class WatchfaceSyncCommons {
     private WatchfaceSyncCommons() {

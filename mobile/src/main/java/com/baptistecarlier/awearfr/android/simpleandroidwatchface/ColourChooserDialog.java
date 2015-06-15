@@ -1,4 +1,4 @@
-package com.catinean.simpleandroidwatchface;
+package com.baptistecarlier.awearfr.android.simpleandroidwatchface;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -31,9 +31,9 @@ public class ColourChooserDialog extends DialogFragment {
         String title = getArguments().getString(ARG_TITLE);
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle(title)
-                .setItems(R.array.colors_array, new DialogInterface.OnClickListener() {
+                .setItems(com.baptistecarlier.awearfr.android.simpleandroidwatchface.R.array.colors_array, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
-                        String[] colours = getResources().getStringArray(R.array.colors_array);
+                        String[] colours = getResources().getStringArray(com.baptistecarlier.awearfr.android.simpleandroidwatchface.R.array.colors_array);
                         colourSelectedListener.onColourSelected(colours[which], getTag());
                     }
                 });

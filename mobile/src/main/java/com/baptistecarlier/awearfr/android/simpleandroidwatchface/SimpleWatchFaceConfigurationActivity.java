@@ -1,4 +1,4 @@
-package com.catinean.simpleandroidwatchface;
+package com.baptistecarlier.awearfr.android.simpleandroidwatchface;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -30,9 +30,9 @@ public class SimpleWatchFaceConfigurationActivity extends ActionBarActivity impl
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_configuration);
+        setContentView(com.baptistecarlier.awearfr.android.simpleandroidwatchface.R.layout.activity_configuration);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(com.baptistecarlier.awearfr.android.simpleandroidwatchface.R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -42,24 +42,24 @@ public class SimpleWatchFaceConfigurationActivity extends ActionBarActivity impl
                 .addApi(Wearable.API)
                 .build();
 
-        findViewById(R.id.configuration_background_colour).setOnClickListener(new View.OnClickListener() {
+        findViewById(com.baptistecarlier.awearfr.android.simpleandroidwatchface.R.id.configuration_background_colour).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ColourChooserDialog.newInstance(getString(R.string.pick_background_colour))
+                ColourChooserDialog.newInstance(getString(com.baptistecarlier.awearfr.android.simpleandroidwatchface.R.string.pick_background_colour))
                         .show(getFragmentManager(), TAG_BACKGROUND_COLOUR_CHOOSER);
             }
         });
 
-        findViewById(R.id.configuration_time_colour).setOnClickListener(new View.OnClickListener() {
+        findViewById(com.baptistecarlier.awearfr.android.simpleandroidwatchface.R.id.configuration_time_colour).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ColourChooserDialog.newInstance(getString(R.string.pick_date_time_colour))
+                ColourChooserDialog.newInstance(getString(com.baptistecarlier.awearfr.android.simpleandroidwatchface.R.string.pick_date_time_colour))
                         .show(getFragmentManager(), TAG_DATE_AND_TIME_COLOUR_CHOOSER);
             }
         });
 
-        backgroundColourImagePreview = findViewById(R.id.configuration_background_colour_preview);
-        dateAndTimeColourImagePreview = findViewById(R.id.configuration_date_and_time_colour_preview);
+        backgroundColourImagePreview = findViewById(com.baptistecarlier.awearfr.android.simpleandroidwatchface.R.id.configuration_background_colour_preview);
+        dateAndTimeColourImagePreview = findViewById(com.baptistecarlier.awearfr.android.simpleandroidwatchface.R.id.configuration_date_and_time_colour_preview);
 
         watchConfigurationPreferences = WatchConfigurationPreferences.newInstance(this);
 

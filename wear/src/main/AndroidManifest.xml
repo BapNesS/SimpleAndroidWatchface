@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.catinean.simpleandroidwatchface">
+  package="com.baptistecarlier.awearfr.android.simpleandroidwatchface">
 
   <uses-feature android:name="android.hardware.type.watch" />
 
@@ -29,7 +29,7 @@
 
       <meta-data
         android:name="com.google.android.wearable.watchface.companionConfigurationAction"
-        android:value="com.catinean.simpleandroidwatchface.CONFIG_DIGITAL" />
+        android:value="com.baptistecarlier.awearfr.android.simpleandroidwatchface.CONFIG_DIGITAL" />
 
       <intent-filter>
         <action android:name="android.service.wallpaper.WallpaperService" />
